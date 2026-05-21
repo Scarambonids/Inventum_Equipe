@@ -31,11 +31,6 @@ function App() {
             <p className="subtitle">
               Portfólio criado para apresentar os contatos e informações dos membros da equipe Inventum durante a Usina de Projetos Experimentais (UPX) da UniFacens, no curso de Análise e Desenvolvimento de Sistemas.
             </p>
-            <div className="info-row">
-              <span>UniFacens Sorocaba</span>
-              <span>UPX</span>
-              <span>Análise e Desenvolvimento de Sistemas</span>
-            </div>
           </div>
 
           <aside className="project-card">
