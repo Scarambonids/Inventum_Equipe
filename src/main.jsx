@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const members = [
-  { name: 'Cristhian Felicio Toledo', email: 'cristhianfeliciotol@gmail.com', phone: '5515981737372' },
-  { name: 'Gabriel Flora', email: 'floragabriel2006@gmail.com', phone: '5515996661507' },
-  { name: 'Giovane Ponciano Vicente', email: 'giponvi@gmail.com', phone: '5515996665692', linkedin: 'https://linkedin.com/in/giovane-vicente', github: 'https://github.com/giponvi' },
-  { name: 'Lucas Alexandre Rodrigues Sandim', email: 'lucas.alexandre.sandim@gmail.com', phone: '5515981793137', linkedin: 'https://www.linkedin.com/in/lucas-sandim-273118321' },
-  { name: 'Matheus Henrique Antunes Martins', email: 'mhantunes.martins@gmail.com', phone: '5515997509584', linkedin: 'https://www.linkedin.com/in/math-antunes' },
-  { name: 'Matheus Silveira Escaramboni', email: 'escarambonimatheussilveira@gmail.com', phone: '5515997563727', linkedin: 'https://www.linkedin.com/in/matheus-escaramboni' },
+  { name: 'Cristhian Felicio Toledo', email: 'cristhianfeliciotol@gmail.com', phone: '5515981737372', image: '/assets/cris.jpeg' },
+  { name: 'Gabriel Flora', email: 'floragabriel2006@gmail.com', phone: '5515996661507', image: '/assets/Gabriel.jpeg' },
+  { name: 'Giovane Ponciano Vicente', email: 'giponvi@gmail.com', phone: '5515996665692', linkedin: 'https://linkedin.com/in/giovane-vicente', github: 'https://github.com/giponvi', image: '/assets/Giovane.jpeg' },
+  { name: 'Lucas Alexandre Rodrigues Sandim', email: 'lucas.alexandre.sandim@gmail.com', phone: '5515981793137', linkedin: 'https://www.linkedin.com/in/lucas-sandim-273118321', image: '/assets/lucas.jpeg' },
+  { name: 'Matheus Henrique Antunes Martins', email: 'mhantunes.martins@gmail.com', phone: '5515997509584', linkedin: 'https://www.linkedin.com/in/math-antunes', image: '/assets/matheusH.jpeg' },
+  { name: 'Matheus Silveira Escaramboni', email: 'escarambonimatheussilveira@gmail.com', phone: '5515997563727', linkedin: 'https://www.linkedin.com/in/matheus-escaramboni', image: '/assets/MatheusSilveira.png' },
 ];
 
 function initials(name) {
@@ -51,7 +51,7 @@ function App() {
         <div className="cards">
           {members.map((member) => (
             <article className="member-card" key={member.email}>
-              <div className="avatar">{initials(member.name)}</div>
+              <img className="avatar" src={member.image} alt={`Foto de ${member.name}`} />
               <h3>{member.name}</h3>
 
               <div className="actions">
