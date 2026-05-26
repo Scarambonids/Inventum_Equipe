@@ -21,7 +21,6 @@ function App() {
       <section className="hero">
         <nav className="topbar">
           <div className="brand">F.<span>O</span>.M.E.</div>
-          <img src="/assets/unifacens-logo.png" alt="UniFacens" />
         </nav>
 
         <div className="hero-grid">
